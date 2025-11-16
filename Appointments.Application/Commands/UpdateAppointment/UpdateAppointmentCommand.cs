@@ -16,6 +16,6 @@
         /// Additional notes for the appointment.
         /// </summary>
         /// <example>Updated follow-up notes</example>
-        public string Notes { get; set; } = string.Empty;
+        public string? Notes { get; set; }
     }
 }

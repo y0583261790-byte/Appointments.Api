@@ -10,10 +10,15 @@ namespace Appointments.Application.Profiles
     {
         public AppointmentProfile()
         {
+            // Map create command -> entity
             CreateMap<CreateAppointmentCommand, Appointment>();
+
+            // Map update command -> entity, only map non-null source members (supports partial updates)
             CreateMap<UpdateAppointmentCommand, Appointment>()
                  .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
-            CreateMap<Appointment, AppointmentDto>();
+
+            // Map entity <-> DTO
+            CreateMap<Appointment, AppointmentDto>().ReverseMap();
         }
     }
 }
