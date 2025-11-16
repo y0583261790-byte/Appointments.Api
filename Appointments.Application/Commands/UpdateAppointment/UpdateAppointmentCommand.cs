@@ -1,0 +1,26 @@
+﻿using Appointments.Core.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Appointments.Application.Commands.UpdateAppointment
+{
+    /// <summary>
+    /// Command to update an existing appointment.
+    /// Only contains fields that can be updated.
+    /// </summary>
+    public class UpdateAppointmentCommand
+    {
+        /// <summary>
+        /// The date and time of the appointment.
+        /// </summary>
+        public DateTime? Date { get; set; }
+
+        /// <summary>
+        /// Additional notes for the appointment.
+        /// </summary>
+        public string Notes { get; set; } = string.Empty;
+    }
+}
