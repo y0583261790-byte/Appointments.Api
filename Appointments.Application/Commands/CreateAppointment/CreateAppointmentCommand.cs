@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Appointments.Application.Commands.CreateAppointment
+﻿namespace Appointments.Application.Commands.CreateAppointment
 {
     /// <summary>
     /// Command to create a new appointment.

@@ -1,11 +1,4 @@
-﻿using Appointments.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Appointments.Application.Commands.UpdateAppointment
+﻿namespace Appointments.Application.Commands.UpdateAppointment
 {
     /// <summary>
     /// Command to update an existing appointment.
