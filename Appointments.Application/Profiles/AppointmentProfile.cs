@@ -4,7 +4,7 @@ using Appointments.Application.DTOs;
 using Appointments.Core.Entities;
 using AutoMapper;
 
-namespace Appointments.Application.Mappings
+namespace Appointments.Application.Profiles
 {
     public class AppointmentProfile : Profile
     {
